@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS-群组选择器</title>
+    <!--
+    群组选择器: 同时定义好几个选择器 用逗号隔开
+    即div, .p, div>span
+    -->
+    <style>
+        /*群组选择器*/
+        div>p, .line, #des {
+            color: orange;
+            font-size: 30px;
+            font-family: STFangsong;
+        }
+
+
+
+    </style>
+
+
+
+</head>
+<body>
+    <div>
+        <p>公告三分国
+            <span class="line">大狗与小狗</span>
+            <label id="des">大白凉</label>
+        </p>
+
+        <p>西门国庆</p>
+        <span>dagou</span>
+
+    </div>
+
+
+
+
+</body>
+</html>

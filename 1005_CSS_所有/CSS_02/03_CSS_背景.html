@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS-背景</title>
+
+    <style>
+        /*设置背景图片*/
+        div {
+            /*设置背景图片*/
+            background-image: url("../img/aaaa.jpg");
+            /*图片是否平铺*/
+            background-repeat: no-repeat;
+            /*设置背景颜色 图片在颜色的上面*/
+            background-color: #10c2ff;
+            /*背景图片偏移量*/
+            /*background-position-x: 20px;*/
+            /*background-position-y: 20px;*/
+            background-position: center;
+            /*火狐不兼容这种方法*/
+            /*-ms-background-position-x: 90px;*/
+
+            width: 1200px;
+            height: 1200px;
+        }
+        /*网页小广告*/
+        body {
+            background-image: url("../img/bd_logo1.png");
+            background-repeat: no-repeat;
+            background-position: right bottom;
+
+
+        }
+
+
+        </style>
+</head>
+<body>
+<div>
+    <p>我是一只小狗</p>
+    <p>可以到处撒尿</p>
+</div>
+
+
+</body>
+</html>

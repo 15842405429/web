@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS-后代选择器</title>
+
+    <!--
+    后代选择器是同一个标签内的所有 不管是直接的子标签还是间接的子标签
+    后代有空格 例如div p,即div下所有的p标签
+    -->
+
+    <style>
+        div p {
+            color: orange;
+            font-size: large;
+        }
+
+        .div1 p {
+            color: greenyellow;
+            font-size: medium;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+
+<div>
+    <p>鲜红浑圆<p>的红豆</p></p>
+    <span class="div1">
+        <p>鲜红红豆</p>
+        <p>浑圆红豆</p>
+    </span>
+    <p>鲜红浑圆的红豆1</p>
+    <p>鲜红浑圆的红豆2</p>
+    <p>鲜红浑圆的红豆3</p>
+    <p>鲜红浑圆的红豆4</p>
+    <p>鲜红浑圆的红豆5</p>
+    <p>鲜红浑圆的红豆6</p>
+
+
+</div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

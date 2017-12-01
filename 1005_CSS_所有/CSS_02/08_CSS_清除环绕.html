@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS-清除环绕</title>
+
+    <style>
+        /*配置色块的宽度和外边距*/
+        .in {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+
+        .right {
+            /*
+            浮动float
+            none: 不浮动 所有元素默认的浮动方式
+            left: 向左浮动
+            right: 向右浮动
+             */
+            float: right;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .out {
+            border: 5px solid black;
+            /*
+            第二种 清除浮动的方式 给最外层设置
+                溢出属性
+            设置内容溢出的处理情况
+            hidden: 超出部分会被修剪
+            visible: 超出部分不做处理 呈现在盒子之外 默认值
+            scroll: 超出部分加滚动
+            auto: 超出部分加滚动 不需要的滚动条省略了
+            */
+            overflow: hidden;
+        }
+
+        .content {
+            width: 300px;
+            height: 300px;
+            font-size: 30px;
+            overflow: scroll;
+            border: 5px solid black;
+        }
+
+        /*
+        第三种 清除浮动 采用伪类元素的处理方式
+        伪类元素用冒号标示
+        after: 在元素处理之后的样式设置
+        before: 在元素处理之前的样式设置
+        */
+        .out:after{
+            /* 清除工作 */
+            /*清除内容*/
+            content: "";
+            /*回复块级*/
+            display: block;
+            /*左右浮动清空*/
+            clear: both;
+        }
+
+
+    </style>
+
+</head>
+<body>
+<div class="out">
+    <div class="in red right"></div>
+    <div class="in yellow right"></div>
+    <div class="in blue right"></div>
+
+    <!--清除浮动
+    第一种方式 在三个色块的后面再加一个div
+        这个div设置clear属性-->
+    <!--<div style="clear: both"></div>-->
+
+</div>
+<!--overflow演示-->
+<div class="content">
+    <span>上课接电话阿斯蒂芬哈东速回复撒电话覅偶速度发货申请of哈三联豆腐花熟练度返回啊沃尔核材佛为请你吃请我喝茶难为情conas.lnc;wo</span>
+    <span>上课接电话阿斯蒂芬哈东速回复撒电话覅偶速度发货申请of哈三联豆腐花熟练度返回啊沃尔核材佛为请你吃请我喝茶难为情conas.lnc;wo</span>
+    <span>上课接电话阿斯蒂芬哈东速回复撒电话覅偶速度发货申请of哈三联豆腐花熟练度返回啊沃尔核材佛为请你吃请我喝茶难为情conas.lnc;wo</span>
+    <span>上课接电话阿斯蒂芬哈东速回复撒电话覅偶速度发货申请of哈三联豆腐花熟练度返回啊沃尔核材佛为请你吃请我喝茶难为情conas.lnc;wo</span>
+    <span>上课接电话阿斯蒂芬哈东速回复撒电话覅偶速度发货申请of哈三联豆腐花熟练度返回啊沃尔核材佛为请你吃请我喝茶难为情conas.lnc;wo</span>
+    <span>上课接电话阿斯蒂芬哈东速回复撒电话覅偶速度发货申请of哈三联豆腐花熟练度返回啊沃尔核材佛为请你吃请我喝茶难为情conas.lnc;wo</span>
+    <span>上课接电话阿斯蒂芬哈东速回复撒电话覅偶速度发货申请of哈三联豆腐花熟练度返回啊沃尔核材佛为请你吃请我喝茶难为情conas.lnc;wo</span>
+</div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

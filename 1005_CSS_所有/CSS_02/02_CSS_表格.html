@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS-表格</title>
+    <style>
+        /*外层表格的线框*/
+        table {
+            border: 1px solid gray;
+        }
+        input {
+            width: 500px;
+            height: 100px;
+            border: none;
+        }
+        img{
+            height: 30px;
+        }
+        span {
+            background-color: #10c2ff;
+            color: white;
+            /*内边距 内容与外框的边距*/
+            padding: 10px;
+        }
+        /*伪元素 鼠标悬浮事件*/
+        span:hover{
+            background-color: #dd00a7;
+        }
+        a.visited{
+
+        }
+
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <td>
+            <input type="text">
+        </td>
+        <!--图标-->
+        <td>
+            <img src="../img/camera.png" height="128" width="128"/>
+        </td>
+
+        <!--按钮-->
+        <td>
+            <span>百度一下</span>
+        </td>
+
+
+    </tr>
+
+
+</table>
+
+
+</body>
+</html>

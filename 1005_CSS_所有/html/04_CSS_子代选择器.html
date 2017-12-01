@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS-子代选择器</title>
+
+    <!--
+    子代选择器找的是直接子标签 用大于号标示(属于的意思) 子选择器 或 类选择器
+    -->
+    <style>
+        /*子代选择器*/
+
+        div > span {
+            color: blue;
+            font-size: 30px;
+        }
+        div > span > span,strong {
+            color: blueviolet;
+            font-size: 60px;
+        }
+        div > .line {
+            color: greenyellow;
+        }
+
+
+
+    </style>
+
+
+</head>
+<body>
+
+<div>
+    <span><strong class="line">床前</strong>明月光</span>
+    <span class="line">地上鞋两双</span>
+    <span>举头<span>望明</span>月</span>
+    <strong><span>梦见郭德纲</span></strong>
+
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS-盒模型</title>
+
+    <style>
+        /*标签选择器*/
+        div {
+            width: 100px;
+            height: 100px;
+            /*边框*/
+            border: 1px solid black;
+
+
+        }
+
+        /*类选择器*/
+        .div1 {
+            background-color: red;
+            /*内边距 内容和边框之间的距离*/
+            padding: 10px;
+            /*第一个颜色块设置下外边距为10px*/
+            margin-bottom: 10px;
+        }
+        .div2 {
+            background-color: yellow;
+            /*设置外边距
+            外边距折叠: 当两个相邻组件设置的margin值一样时
+                      会出现折叠情况 即两个组件的间接有一个
+                      不会相加
+            */
+            margin: 10px;
+            /*第二个颜色块设置上外边距为20px
+            当两个外边距设置的值不一样时 采用最大的值作为边距值
+            */
+            margin-top: 20px;
+
+
+        }
+        .div3 {
+            background-color: blue;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+<!--设置3个颜色块-->
+<div class="div1">
+    <p>哈哈哈上课</p>
+</div>
+<div class="div2">
+    <p>嘎嘎嘎下课</p>
+</div>
+<div class="div3"></div>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

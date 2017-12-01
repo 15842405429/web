@@ -1,0 +1,28 @@
+/*标签选择器定义*/
+div{
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+/*类选择器*/
+.div1{
+    background-color: bisque;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+/*id选择器*/
+#div2{
+    background-color: lawngreen;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+
+
+
+
+
+
